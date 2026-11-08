@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre Genérico | Portfolio UX/UI y Frontend</title>
+  <meta name="description" content="Portfolio de Nombre Genérico: diseño de experiencias digitales, sistemas de diseño y desarrollo frontend con React y Tailwind CSS.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true">AR</span>
+        <span class="brand__text">
+          <span class="brand__name">Nombre Genérico</span>
+          <span class="brand__role">Portfolio · UX &amp; Frontend</span>
+        </span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ol class="nav-list">
+          <li><a href="#inicio"><span class="num">01.</span> Inicio</a></li>
+          <li><a href="#sobre-mi"><span class="num">02.</span> Sobre mí</a></li>
+          <li><a href="#proyectos"><span class="num">03.</span> Proyectos</a></li>
+          <li><a href="#servicios"><span class="num">04.</span> Servicios</a></li>
+          <li><a href="#trayectoria"><span class="num">05.</span> Trayectoria</a></li>
+          <li><a href="#contacto"><span class="num">06.</span> Contacto</a></li>
+        </ol>
+      </nav>
+
+      <p class="availability"><span class="dot" aria-hidden="true"></span> Disponible Q2</p>
+      <a class="btn btn--primary" href="#contacto">Hablemos →</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 00. HERO -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">[H1: Titular de impacto &amp; propuesta de valor]</p>
+          <h1 id="titulo-hero">Diseño experiencias digitales intuitivas y creo interfaces frontend escalables.</h1>
+          <p class="hero__lead">
+            Combino investigación de usuarios, arquitectura visual en sistemas de diseño y desarrollo
+            frontend en React y Tailwind para transformar retos complejos en productos digitales memorables.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#proyectos">Ver proyectos destacados ↓</a>
+            <a class="link-cv" href="cv.pdf" download>Descargar CV (PDF)</a>
+          </div>
+
+          <dl class="stats">
+            <div class="stat">
+              <dt>Años de experiencia</dt>
+              <dd>+8</dd>
+            </div>
+            <div class="stat">
+              <dt>Proyectos lanzados</dt>
+              <dd>45+</dd>
+            </div>
+            <div class="stat">
+              <dt>Satisfacción</dt>
+              <dd>99%</dd>
+            </div>
+            <div class="stat">
+              <dt>Sistemas de UI</dt>
+              <dd>12</dd>
+            </div>
+          </dl>
+
+          <ul class="social-links" aria-label="Redes y contacto">
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+            <li><a href="mailto:nombre@apellido.io">Email</a></li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <!-- Sustituir por la foto real: img/hero.jpg -->
+          <img src="img/hero.jpg" width="800" height="1000"
+               alt="Retrato profesional de Nombre Genérico, plano medio, con iluminación suave y fondo neutro">
+        </figure>
+      </div>
+
+      <div class="container">
+        <section class="proof" aria-labelledby="titulo-proof">
+          <h2 class="proof__title" id="titulo-proof">Empresas y clientes que han confiado en mi trabajo</h2>
+          <ul class="proof__list">
+            <li>TechCorp Labs</li>
+            <li>Finflow Bank</li>
+            <li>Nexus Digital</li>
+            <li>Orbit SaaS</li>
+            <li>Pulse AI</li>
+            <li>Venture Capital</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- 01. SOBRE MÍ -->
+    <section class="section section--alt" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+      <div class="container about">
+        <figure class="about__media">
+          <!-- Sustituir por la foto real: img/sobre-mi-taller.jpg -->
+          <img src="img/sobre-mi-taller.jpg" width="500" height="400"
+               alt="Nombre Genérico bocetando interfaces en su espacio de trabajo">
+          <figcaption class="sr-only">Fotografía secundaria: setup de taller UX</figcaption>
+        </figure>
+
+        <div class="about__text">
+          <p class="section-label">01. Trayectoria &amp; propósito</p>
+          <h2 id="titulo-sobre-mi">Más que diseñar interfaces, construyo puentes sólidos entre usuarios, negocio y código.</h2>
+          <p>
+            Con más de 8 años en la intersección entre diseño de producto y frontend, he liderado sistemas
+            de diseño y aplicaciones web complejas utilizadas por más de 500.000 usuarios activos diarios.
+          </p>
+
+          <div class="cards-2">
+            <article class="card">
+              <h3>[01] Descubrimiento &amp; UX</h3>
+              <p>Entrevistas con usuarios y flujos de arquitectura de información.</p>
+            </article>
+            <article class="card">
+              <h3>[02] Wireframing Low-Fi</h3>
+              <p>Validación estructural rápida antes de programar o detallar la UI.</p>
+            </article>
+            <article class="card">
+              <h3>[03] Design System &amp; UI</h3>
+              <p>Tokens semánticos y componentes accesibles WCAG AA.</p>
+            </article>
+            <article class="card">
+              <h3>[04] Frontend &amp; Código</h3>
+              <p>Desarrollo en React, TypeScript y Tailwind optimizado.</p>
+            </article>
+          </div>
+
+          <blockquote class="quote">
+            <p>“El mejor diseño no es el que más elementos tiene, sino el que elimina toda duda en la mente del usuario mientras cumple los objetivos del negocio.”</p>
+          </blockquote>
+
+          <h3 class="subhead">Herramientas y competencias</h3>
+          <ul class="tags">
+            <li>Arquitectura de información</li>
+            <li>Wireframing &amp; prototipado</li>
+            <li>Figma Variables &amp; Tokens</li>
+            <li>React &amp; TypeScript</li>
+            <li>Tailwind CSS v4</li>
+            <li>Accesibilidad WCAG 2.1 AA</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02. PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="titulo-proyectos">
+      <div class="container">
+        <header class="section__header">
+          <p class="section-label">02. Casos de estudio</p>
+          <h2 id="titulo-proyectos">Diseño centrado en el usuario, respaldado por métricas reales.</h2>
+        </header>
+
+        <div class="cases">
+
+          <article class="case">
+            <div class="case__media">
+              <!-- Sustituir por img/caso-finflow.jpg -->
+              <img src="img/caso-finflow.jpg" width="800" height="500"
+                   alt="Vista previa de la plataforma bancaria B2B Finflow">
+            </div>
+            <p class="case__meta"><span>Fintech · Lead UX/UI Designer</span><span>2024</span></p>
+            <h3>Finflow: Plataforma bancaria B2B</h3>
+            <p>Rediseño integral de la experiencia de tesorería y pagos transfronterizos para directores financieros de pymes europeas.</p>
+            <dl class="metrics">
+              <div class="metric"><dt>Tiempo de tarea</dt><dd>-42%</dd></div>
+              <div class="metric"><dt>Adopción</dt><dd>+165%</dd></div>
+              <div class="metric"><dt>Errores</dt><dd>-80%</dd></div>
+            </dl>
+            <div class="case__footer">
+              <span class="case__more">Detalle completo</span>
+              <!-- Sustituir # por la URL del caso -->
+              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Finflow</span></a>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__media">
+              <!-- Sustituir por img/caso-pulse-ai.jpg -->
+              <img src="img/caso-pulse-ai.jpg" width="800" height="500"
+                   alt="Pantallas de la app móvil de salud Pulse AI">
+            </div>
+            <p class="case__meta"><span>Mobile App · Product Designer</span><span>2024</span></p>
+            <h3>Pulse AI: App móvil de salud</h3>
+            <p>Monitoreo biométrico y análisis predictivo asistido por inteligencia artificial para pacientes que requieren seguimiento continuo.</p>
+            <dl class="metrics">
+              <div class="metric"><dt>Retención D30</dt><dd>68%</dd></div>
+              <div class="metric"><dt>App Store</dt><dd>4.8 ★</dd></div>
+              <div class="metric"><dt>Alertas</dt><dd>+30k</dd></div>
+            </dl>
+            <div class="case__footer">
+              <span class="case__more">Detalle completo</span>
+              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Pulse AI</span></a>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__media">
+              <!-- Sustituir por img/caso-orbit.jpg -->
+              <img src="img/caso-orbit.jpg" width="800" height="500"
+                   alt="Documentación del sistema de diseño multiplataforma Orbit">
+            </div>
+            <p class="case__meta"><span>Design System · Design System Architect</span><span>2023</span></p>
+            <h3>Orbit: Sistema de diseño multiplataforma</h3>
+            <p>Infraestructura de componentes, variables de Figma y tokens semánticos sincronizados para 6 productos digitales y 45 ingenieros.</p>
+            <dl class="metrics">
+              <div class="metric"><dt>Velocidad</dt><dd>+3.5x</dd></div>
+              <div class="metric"><dt>Consistencia</dt><dd>98%</dd></div>
+              <div class="metric"><dt>Componentes</dt><dd>65+</dd></div>
+            </dl>
+            <div class="case__footer">
+              <span class="case__more">Detalle completo</span>
+              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Orbit</span></a>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case__media">
+              <!-- Sustituir por img/caso-logicore.jpg -->
+              <img src="img/caso-logicore.jpg" width="800" height="500"
+                   alt="Panel de control logístico LogiCore con mapa de vehículos">
+            </div>
+            <p class="case__meta"><span>SaaS &amp; Web · Senior UI/UX Designer</span><span>2023</span></p>
+            <h3>LogiCore: Panel de control logístico</h3>
+            <p>Dashboard operativo para despacho y supervisión de más de 2.000 vehículos en tiempo real con analítica geoespacial.</p>
+            <dl class="metrics">
+              <div class="metric"><dt>Incidentes</dt><dd>-28%</dd></div>
+              <div class="metric"><dt>Reacción</dt><dd>&lt;90s</dd></div>
+              <div class="metric"><dt>Satisfacción</dt><dd>9.4/10</dd></div>
+            </dl>
+            <div class="case__footer">
+              <span class="case__more">Detalle completo</span>
+              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de LogiCore</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. SERVICIOS -->
+    <section class="section section--alt" id="servicios" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <header class="section__header">
+          <p class="section-label">03. Servicios</p>
+          <h2 id="titulo-servicios">De la hipótesis inicial al código en producción.</h2>
+        </header>
+
+        <div class="services">
+          <article class="card">
+            <h3>[01] UX Research &amp; Strategy</h3>
+            <p>Mapeo de jornadas de usuario, entrevistas estructuradas y wireframing de baja fidelidad para validar ideas antes de invertir código.</p>
+            <ul class="tags tags--compact">
+              <li>User journeys</li>
+              <li>Low-fi wireframes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>[02] UI &amp; Design Systems</h3>
+            <p>Construcción de librerías escalables en Figma con tokens semánticos sincronizados a repositorios Git.</p>
+            <ul class="tags tags--compact">
+              <li>Figma tokens</li>
+              <li>Guías de estilo</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>[03] Frontend React &amp; Tailwind</h3>
+            <p>Transformación precisa de componentes de diseño a código limpio, modular, accesible y estrictamente tipado.</p>
+            <ul class="tags tags--compact">
+              <li>React / TS</li>
+              <li>Tailwind CSS v4</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>[04] Auditoría &amp; Accesibilidad</h3>
+            <p>Revisión técnica heurística y optimización de flujos con cumplimiento estricto de WCAG 2.1 AA.</p>
+            <ul class="tags tags--compact">
+              <li>Checklist AA</li>
+              <li>CRO audits</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. TRAYECTORIA PROFESIONAL -->
+    <section class="section" id="trayectoria" aria-labelledby="titulo-trayectoria">
+      <div class="container">
+        <header class="section__header">
+          <p class="section-label">04. Trayectoria profesional</p>
+          <h2 id="titulo-trayectoria">Más de 8 años construyendo productos digitales en equipos ágiles.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job">
+            <div class="job__head">
+              <h3>Lead Product Designer &amp; Design Systems</h3>
+              <p class="job__period"><time>2023 – Presente</time></p>
+            </div>
+            <p class="job__org">Nexus Tech Global · Remoto Global</p>
+            <ul>
+              <li>Liderazgo de la arquitectura de interfaz para 4 plataformas SaaS B2B.</li>
+              <li>Estandarización del sistema de diseño Orbit, reduciendo el tiempo de diseño en un 40%.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <h3>Senior UI/UX Designer &amp; Frontend Dev</h3>
+              <p class="job__period"><time>2021 – 2023</time></p>
+            </div>
+            <p class="job__org">Finflow Labs Europe · Madrid, España</p>
+            <ul>
+              <li>Diseño de la plataforma de pagos transfronterizos, procesando +€20M mensuales.</li>
+              <li>Construcción del catálogo de componentes en React y Tailwind CSS.</li>
+            </ul>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <h3>Digital Product Designer</h3>
+              <p class="job__period"><time>2018 – 2021</time></p>
+            </div>
+            <p class="job__org">Studio Pixel Agencia · Barcelona, España</p>
+            <ul>
+              <li>Diseño y prototipado interactivo de webs y aplicaciones móviles para banca y retail.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05. TESTIMONIOS -->
+    <section class="section section--alt" id="testimonios" aria-labelledby="titulo-testimonios">
+      <div class="container">
+        <header class="section__header">
+          <p class="section-label">05. Testimonios &amp; feedback</p>
+          <h2 id="titulo-testimonios">Lo que dicen líderes de producto y tecnología.</h2>
+        </header>
+
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote>
+              <p>“Nombre tiene la rara habilidad de entender el negocio tan bien como el diseño. Su capacidad para transformar requisitos confusos en wireframes claros aceleró nuestro lanzamiento 3 meses.”</p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">EG</span>
+              <span>
+                <cite>Elena Gómez</cite>
+                <small>VP of Product · Finflow</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              <p>“Trabajar con Nombre como diseñador que domina React y Design Systems fue un soplo de aire fresco. Sus especificaciones eran prácticamente código de producción listo para usar.”</p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">MV</span>
+              <span>
+                <cite>Marcus Vance</cite>
+                <small>Head of Engineering · Nexus</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote>
+              <p>“El diseño de nuestra app móvil superó cualquier expectativa. Nombre supo transmitir empatía y calidez en una herramienta médica rigurosa. Los inversores quedaron fascinados.”</p>
+            </blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">SV</span>
+              <span>
+                <cite>Sofía Valenzuela</cite>
+                <small>Co-Founder &amp; CEO · Pulse AI</small>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="container contact">
+        <div>
+          <p class="section-label">06. Iniciemos conversación</p>
+          <h2 id="titulo-contacto">¿Tienes un reto de producto o interfaz en mente?</h2>
+          <p class="muted">Actualmente reviso propuestas para proyectos a partir del segundo trimestre de 2025.</p>
+        </div>
+
+        <div>
+          <a class="contact-card" href="mailto:nombre@apellido.io">
+            <span class="label">Email directo</span>
+            <span class="value">nombre@apellido.io</span>
+            <span class="note">Respuesta en menos de 24 h</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__brand"><span class="brand__mark brand__mark--light" aria-hidden="true">AR</span> <strong>Nombre Genérico</strong></p>
+      <p class="footer__copy">© 2026 Nombre Genérico. Diseñado y desarrollado con HTML5 y CSS3.</p>
+      <a class="btn btn--light" href="#inicio">↑ Volver al inicio</a>
+    </div>
+  </footer>
+
+</body>
+</html>
