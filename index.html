@@ -22,19 +22,28 @@
         </span>
       </a>
 
-      <nav aria-label="Navegación principal">
+      <nav class="header__nav" aria-label="Navegación principal">
         <ol class="nav-list">
-          <li><a href="#inicio"><span class="num">01.</span> Inicio</a></li>
-          <li><a href="#sobre-mi"><span class="num">02.</span> Sobre mí</a></li>
-          <li><a href="#proyectos"><span class="num">03.</span> Proyectos</a></li>
-          <li><a href="#servicios"><span class="num">04.</span> Servicios</a></li>
-          <li><a href="#trayectoria"><span class="num">05.</span> Trayectoria</a></li>
-          <li><a href="#contacto"><span class="num">06.</span> Contacto</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ol>
       </nav>
-
-      <p class="availability"><span class="dot" aria-hidden="true"></span> Disponible Q2</p>
-      <a class="btn btn--primary" href="#contacto">Hablemos →</a>
+      
+      <div class="header__actions">
+        <p class="availability"><span class="dot" aria-hidden="true"></span> Disponible Q2</p>
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+          <span aria-hidden="true">☾</span>
+          <span class="btn__label">Modo noche</span>
+        </button>
+        <a class="btn btn--primary" href="#contacto">
+          <span class="btn__label">Hablemos</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -108,17 +117,24 @@
     <!-- 01. SOBRE MÍ -->
     <section class="section section--alt" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
       <div class="container about">
-        <figure class="about__media">
+
+        <div class="about__aside">
+          <figure class="about__media">
           <!-- Sustituir por la foto real: img/sobre-mi-taller.jpg -->
-          <img src="img/sobre-mi-taller.jpg" width="500" height="400"
+            <img src="img/sobre-mi-taller.jpg" width="500" height="400"
                alt="Nombre Genérico bocetando interfaces en su espacio de trabajo">
           <figcaption class="sr-only">Fotografía secundaria: setup de taller UX</figcaption>
         </figure>
 
+        <blockquote class="quote">
+            <p>“El mejor diseño no es el que más elementos tiene, sino el que elimina toda duda en la mente del usuario mientras cumple los objetivos del negocio.”</p>
+         </blockquote>
+        </div>
+
         <div class="about__text">
           <p class="section-label">01. Trayectoria &amp; propósito</p>
           <h2 id="titulo-sobre-mi">Más que diseñar interfaces, construyo puentes sólidos entre usuarios, negocio y código.</h2>
-          <p>
+          <p class="about__lead">
             Con más de 8 años en la intersección entre diseño de producto y frontend, he liderado sistemas
             de diseño y aplicaciones web complejas utilizadas por más de 500.000 usuarios activos diarios.
           </p>
@@ -142,10 +158,6 @@
             </article>
           </div>
 
-          <blockquote class="quote">
-            <p>“El mejor diseño no es el que más elementos tiene, sino el que elimina toda duda en la mente del usuario mientras cumple los objetivos del negocio.”</p>
-          </blockquote>
-
           <h3 class="subhead">Herramientas y competencias</h3>
           <ul class="tags">
             <li>Arquitectura de información</li>
@@ -156,6 +168,7 @@
             <li>Accesibilidad WCAG 2.1 AA</li>
           </ul>
         </div>
+
       </div>
     </section>
 
@@ -424,6 +437,41 @@
       <a class="btn btn--light" href="#inicio">↑ Volver al inicio</a>
     </div>
   </footer>
+
+    <!-- JS mínimo: solo alterna el modo noche y recuerda la elección -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function isDark() {
+        var t = root.getAttribute('data-theme');
+        return t ? t === 'dark' : mq.matches;
+      }
+
+      function render() {
+        btn.setAttribute('aria-pressed', String(isDark()));
+      }
+
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved) { root.setAttribute('data-theme', saved); }
+      } catch (e) { /* almacenamiento no disponible: se usa la preferencia del sistema */ }
+
+      render();
+
+      btn.addEventListener('click', function () {
+        var next = isDark() ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        render();
+      });
+
+      mq.addEventListener('change', render);
+    })();
+  </script>
+
 
 </body>
 </html>
