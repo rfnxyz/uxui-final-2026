@@ -916,6 +916,74 @@ ol, ul {
   color: var(--muted);
 }
 
+.case__tags {
+  margin: 0 0 1.25rem;
+}
+
+/* Diálogo de caso de estudio */
+.case-dialog {
+  position: relative;
+  width: min(100% - 2rem, 52rem);
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  overflow-y: auto;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.case-dialog::backdrop {
+  background: rgba(10, 12, 9, 0.6);
+}
+
+.case-dialog__close {
+  position: sticky;
+  top: 0.75rem;
+  float: right;
+  margin: 0.75rem 0.75rem 0 0;
+  width: 44px;
+  height: 44px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.case-dialog__close:hover {
+  border-color: var(--text);
+}
+
+.case-dialog__body {
+  padding: 1.5rem 1.75rem 2rem;
+}
+
+.case-dialog__body h2 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.6rem;
+  padding-right: 3rem;
+}
+
+.case-dialog__body h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.case-dialog__body p,
+.case-dialog__body li {
+  color: var(--muted);
+}
+
+.case-dialog__body ul {
+  padding-left: 1.25rem;
+}
+
+.case-dialog__body .tags {
+  margin-top: 1.5rem;
+}
+
 .case__footer {
   display: flex;
   justify-content: space-between;
@@ -1172,6 +1240,10 @@ ol, ul {
   }
 
   .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .metrics__single {
     grid-template-columns: 1fr;
   }
 

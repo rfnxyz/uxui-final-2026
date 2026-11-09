@@ -34,7 +34,6 @@
       </nav>
 
       <div class="header__actions">
-        <p class="availability"><span class="dot" aria-hidden="true"></span> Disponible Q2</p>
         <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
           <span aria-hidden="true">☾</span>
           <span class="sr-only">Modo noche</span>
@@ -201,15 +200,18 @@
             <h3>Finflow: Plataforma bancaria B2B</h3>
             <p>Rediseño integral de la experiencia de tesorería y pagos transfronterizos para directores financieros de pymes europeas.</p>
             <dl class="metrics">
-              <div class="metric"><dt>Tiempo de tarea</dt><dd>-42%</dd></div>
               <div class="metric"><dt>Adopción</dt><dd>+165%</dd></div>
-              <div class="metric"><dt>Errores</dt><dd>-80%</dd></div>
             </dl>
-            <div class="case__footer">
-              <span class="case__more">Detalle completo</span>
-              <!-- Sustituir # por la URL del caso -->
-              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Finflow</span></a>
-            </div>
+          <ul class="tags case__tags" aria-label="Herramientas del proyecto">
+            <li>Figma</li>
+            <li>Investigación de usuarios</li>
+            <li>Design tokens</li>
+            <li>React</li>
+          </ul>
+          <div class="case__footer">
+            <span class="case__more">Detalle completo</span>
+            <button class="btn btn--small" type="button" data-case="finflow">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Finflow</span></button>
+          </div>
           </article>
 
           <article class="case">
@@ -222,14 +224,18 @@
             <h3>Pulse AI: App móvil de salud</h3>
             <p>Monitoreo biométrico y análisis predictivo asistido por inteligencia artificial para pacientes que requieren seguimiento continuo.</p>
             <dl class="metrics">
-              <div class="metric"><dt>Retención D30</dt><dd>68%</dd></div>
               <div class="metric"><dt>App Store</dt><dd>4.8 ★</dd></div>
-              <div class="metric"><dt>Alertas</dt><dd>+30k</dd></div>
             </dl>
-            <div class="case__footer">
-              <span class="case__more">Detalle completo</span>
-              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Pulse AI</span></a>
-            </div>
+          <ul class="tags case__tags" aria-label="Herramientas del proyecto">
+            <li>Figma</li>
+            <li>React Native</li>
+            <li>IA predictiva</li>
+            <li>WCAG 2.1 AA</li>
+          </ul>
+          <div class="case__footer">
+            <span class="case__more">Detalle completo</span>
+            <button class="btn btn--small" type="button" data-case="pulse-ai">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Pulse AI</span></button>
+          </div>
           </article>
 
           <article class="case">
@@ -242,14 +248,18 @@
             <h3>Orbit: Sistema de diseño multiplataforma</h3>
             <p>Infraestructura de componentes, variables de Figma y tokens semánticos sincronizados para 6 productos digitales y 45 ingenieros.</p>
             <dl class="metrics">
-              <div class="metric"><dt>Velocidad</dt><dd>+3.5x</dd></div>
               <div class="metric"><dt>Consistencia</dt><dd>98%</dd></div>
-              <div class="metric"><dt>Componentes</dt><dd>65+</dd></div>
             </dl>
-            <div class="case__footer">
-              <span class="case__more">Detalle completo</span>
-              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Orbit</span></a>
-            </div>
+          <ul class="tags case__tags" aria-label="Herramientas del proyecto">
+            <li>Figma Variables</li>
+            <li>Design tokens</li>
+            <li>Storybook</li>
+            <li>Tailwind CSS</li>
+          </ul>
+          <div class="case__footer">
+            <span class="case__more">Detalle completo</span>
+            <button class="btn btn--small" type="button" data-case="orbit">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de Orbit</span></button>
+          </div>
           </article>
 
           <article class="case">
@@ -266,10 +276,16 @@
               <div class="metric"><dt>Reacción</dt><dd>&lt;90s</dd></div>
               <div class="metric"><dt>Satisfacción</dt><dd>9.4/10</dd></div>
             </dl>
-            <div class="case__footer">
-              <span class="case__more">Detalle completo</span>
-              <a class="btn btn--small" href="#">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de LogiCore</span></a>
-            </div>
+          <ul class="tags case__tags" aria-label="Herramientas del proyecto">
+            <li>Figma</li>
+            <li>React</li>
+            <li>Mapas geoespaciales</li>
+            <li>Tailwind CSS</li>
+          </ul>
+          <div class="case__footer">
+            <span class="case__more">Detalle completo</span>
+            <button class="btn btn--small" type="button" data-case="logicore">Ver caso <span aria-hidden="true">→</span><span class="sr-only"> de LogiCore</span></button>
+          </div>
           </article>
 
         </div>
@@ -446,6 +462,148 @@
       <a class="btn btn--light" href="#inicio">↑ Volver al inicio</a>
     </div>
   </footer>
+
+  <!-- DIÁLOGO DE CASOS DE ESTUDIO -->
+  <dialog class="case-dialog" id="caso-dialog" aria-labelledby="caso-titulo">
+    <button class="case-dialog__close" type="button" aria-label="Cerrar caso de estudio">✕</button>
+    <div class="case-dialog__body"></div>
+  </dialog>
+
+  <template id="caso-finflow">
+    <p class="section-label">Fintech · Lead UX/UI Designer · 2024</p>
+    <h2 id="caso-titulo">Finflow: Plataforma bancaria B2B</h2>
+    <h3>Problema</h3>
+    <p>Los directores financieros de pymes europeas tardaban demasiado en preparar pagos internacionales. El flujo tenía demasiados pasos sin explicación, y los errores de tipo de cambio aparecían cuando el pago ya estaba enviado.</p>
+    <h3>Proceso</h3>
+    <ul>
+      <li>Entrevistas con ocho directores financieros y mapeo de sus jornadas de pago.</li>
+      <li>Wireframes de baja fidelidad validados en dos rondas.</li>
+      <li>Test de usabilidad con cinco personas, con tareas como "programar un pago recurrente".</li>
+    </ul>
+    <h3>Solución</h3>
+    <p>Flujo de pago en tres pasos, con validación en cada campo y un resumen del costo final antes de confirmar. Los componentes se documentaron con design tokens para que el equipo de desarrollo los reutilizara.</p>
+    <h3>Resultado</h3>
+    <p>El tiempo de tarea bajó un 42 %, la adopción subió un 165 % y los errores se redujeron un 80 % durante el primer trimestre tras el lanzamiento.</p>
+    <h3>Aprendizaje</h3>
+    <p>Validar con usuarios reales antes de diseñar en alta fidelidad evitó rehacer la confirmación. Lo que más preocupaba a los usuarios era el costo, no el formato.</p>
+    <ul class="tags" aria-label="Herramientas del proyecto">
+      <li>Figma</li>
+      <li>Investigación de usuarios</li>
+      <li>Design tokens</li>
+      <li>React</li>
+      <li>WCAG 2.1 AA</li>
+    </ul>
+    <p><a class="btn btn--small" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Ver en Figma <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+  </template>
+
+  <template id="caso-pulse-ai">
+    <p class="section-label">Mobile App · Product Designer · 2024</p>
+    <h2 id="caso-titulo">Pulse AI: App móvil de salud</h2>
+    <h3>Problema</h3>
+    <p>Los pacientes con seguimiento continuo recibían datos biométricos sin contexto y dejaban de usar la app a las pocas semanas.</p>
+    <h3>Proceso</h3>
+    <ul>
+      <li>Entrevistas con pacientes y con cardiólogos.</li>
+      <li>Prototipo de alta fidelidad con alertas escalonadas.</li>
+      <li>Test con seis pacientes de 45 a 70 años para evaluar la legibilidad.</li>
+    </ul>
+    <h3>Solución</h3>
+    <p>Resumen diario con tendencia, alertas en tres niveles de urgencia y un lenguaje sin tecnicismos. Tamaños de texto y contraste ajustados a WCAG AA.</p>
+    <h3>Resultado</h3>
+    <p>Retención a 30 días del 68 %, calificación 4.8 en la App Store y 30 mil alertas gestionadas.</p>
+    <h3>Aprendizaje</h3>
+    <p>Las alertas funcionan cuando el paciente sabe qué hacer. El color no basta por sí solo, así que cada nivel tiene icono y texto.</p>
+    <ul class="tags" aria-label="Herramientas del proyecto">
+      <li>Figma</li>
+      <li>React Native</li>
+      <li>IA predictiva</li>
+      <li>WCAG 2.1 AA</li>
+    </ul>
+    <p><a class="btn btn--small" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Ver en Figma <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+  </template>
+
+  <template id="caso-orbit">
+    <p class="section-label">Design System · Design System Architect · 2023</p>
+    <h2 id="caso-titulo">Orbit: Sistema de diseño multiplataforma</h2>
+    <h3>Problema</h3>
+    <p>Seis productos tenían componentes duplicados y diseños que cambiaban de un equipo a otro.</p>
+    <h3>Proceso</h3>
+    <ul>
+      <li>Auditoría de los componentes existentes en los seis productos.</li>
+      <li>Definición de tokens semánticos junto con 45 ingenieros y diseñadores.</li>
+      <li>Migración por fases, empezando por los componentes más usados.</li>
+    </ul>
+    <h3>Solución</h3>
+    <p>Librería de 65 componentes con variables de Figma sincronizadas con el repositorio, y documentación con ejemplos de uso y criterios de accesibilidad.</p>
+    <h3>Resultado</h3>
+    <p>La velocidad de diseño aumentó 3.5 veces y la consistencia visual llegó al 98 % según la auditoría trimestral.</p>
+    <h3>Aprendizaje</h3>
+    <p>Un sistema se adopta cuando resuelve un problema diario del equipo. Empezar por los componentes más usados fue clave.</p>
+    <ul class="tags" aria-label="Herramientas del proyecto">
+      <li>Figma Variables</li>
+      <li>Design tokens</li>
+      <li>Storybook</li>
+      <li>Tailwind CSS</li>
+    </ul>
+    <p><a class="btn btn--small" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Ver en Figma <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+  </template>
+
+  <template id="caso-logicore">
+    <p class="section-label">SaaS &amp; Web · Senior UI/UX Designer · 2023</p>
+    <h2 id="caso-titulo">LogiCore: Panel de control logístico</h2>
+    <h3>Problema</h3>
+    <p>Los operadores de despacho de más de 2.000 vehículos perdían tiempo buscando incidentes entre mapas y tablas separadas.</p>
+    <h3>Proceso</h3>
+    <ul>
+      <li>Observación en el centro de despacho durante tres turnos.</li>
+      <li>Prototipos de panel con mapa y lista unificada.</li>
+      <li>Test de usabilidad con ocho operadores.</li>
+    </ul>
+    <h3>Solución</h3>
+    <p>Panel con mapa geoespacial y lista de incidentes sincronizados, alertas priorizadas por severidad y acciones de un solo clic.</p>
+    <h3>Resultado</h3>
+    <p>Los incidentes bajaron un 28 %, el tiempo de reacción quedó por debajo de 90 segundos y la satisfacción llegó a 9.4 sobre 10.</p>
+    <h3>Aprendizaje</h3>
+    <p>Observar el trabajo real cambió las prioridades: lo urgente no era el mapa, sino la lista de incidentes.</p>
+    <ul class="tags" aria-label="Herramientas del proyecto">
+      <li>Figma</li>
+      <li>React</li>
+      <li>Mapas geoespaciales</li>
+      <li>Tailwind CSS</li>
+    </ul>
+    <p><a class="btn btn--small" href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Ver en Figma <span aria-hidden="true">↗</span><span class="sr-only"> (se abre en una pestaña nueva)</span></a></p>
+  </template>
+
+  <script>
+    (function () {
+      var dialog = document.getElementById('caso-dialog');
+      if (!dialog || typeof dialog.showModal !== 'function') { return; }
+
+      var body = dialog.querySelector('.case-dialog__body');
+      var closeBtn = dialog.querySelector('.case-dialog__close');
+      var trigger = null;
+
+      document.querySelectorAll('[data-case]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var tpl = document.getElementById('caso-' + btn.getAttribute('data-case'));
+          if (!tpl) { return; }
+          body.replaceChildren(tpl.content.cloneNode(true));
+          trigger = btn;
+          dialog.showModal();
+        });
+      });
+
+      closeBtn.addEventListener('click', function () { dialog.close(); });
+
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) { dialog.close(); }
+      });
+
+      dialog.addEventListener('close', function () {
+        if (trigger) { trigger.focus(); }
+      });
+    })();
+  </script>
 
     <!-- JS mínimo: solo alterna el modo noche y recuerda la elección -->
   <script>
