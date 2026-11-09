@@ -1,22 +1,26 @@
 /* ---------- 1. Variables ---------- */
 :root {
+  /* Degradado de marca: #B3B6AD → #EBD3A2 */
+  --gradient: linear-gradient(135deg, #b3b6ad 0%, #ebd3a2 100%);
+
   --bg: #ffffff;
-  --surface: #f4f4f1;
-  --card: #ffffff;
-  --text: #111111;            /* 18.7:1 sobre --bg */
-  --muted: #4a4a4a;           /* 8.9:1 sobre --bg, 7.9:1 sobre --surface */
-  --accent: #0b5394;          /* 7.9:1 sobre --bg */
-  --line: #c4c4bd;
-  --ph: #e9e9e4;
-  --ph-stripe: #dcdcd6;
-  --btn: #111111;
-  --btn-text: #ffffff;
-  --btn-hover: #333333;
-  --footer: #111111;
-  --footer-text: #e6e6e6;
+  --wash: linear-gradient(135deg, rgba(179, 182, 173, 0.32) 0%, rgba(235, 211, 162, 0.38) 100%);
+  --surface: rgba(255, 255, 255, 0.45);
+  --card: rgba(255, 255, 255, 0.72);
+  --text: #1f2120;
+  --muted: #4a4d45;
+  --accent: #55584e;
+  --focus: #55584e;
+  --line: #a6a99e;
+  --ph: #e4e0d2;
+  --ph-stripe: #d6d1bf;
+  --btn: #1f2120;
+  --btn-text: #1f2120;
+  --btn-hover: #3a3d36;
+  --footer: #4d5047;
+  --footer-text: #fbfaf6;
   --dot: #2e7d32;
-  --grid: rgba(0, 0, 0, 0.035);
-  --focus: #0b5394;
+  --grid: rgba(110, 108, 92, 0.16);
   color-scheme: light;
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -30,46 +34,48 @@
 /* Modo noche por preferencia del sistema (si no hay elección manual) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0a1224;
-    --surface: #101b31;
-    --card: #14213b;
-    --text: #e8f1ff;          /* ~16:1 sobre --bg */
-    --muted: #aabfd9;         /* ~8.5:1 sobre --card */
-    --accent: #7dd3fc;        /* ~10:1 sobre --bg */
-    --line: #2b4468;
-    --ph: #17294a;
-    --ph-stripe: #1f355c;
-    --btn: #e8f1ff;
-    --btn-text: #0a1224;
+    --bg: #1d1f1b;
+    --wash: linear-gradient(135deg, rgba(179, 182, 173, 0.1) 0%, rgba(235, 211, 162, 0.12) 100%);
+    --surface: rgba(255, 255, 255, 0.03);
+    --card: rgba(255, 255, 255, 0.05);
+    --text: #f1eee6;
+    --muted: #bfc0b9;
+    --accent: #ebd3a2;
+    --focus: #ebd3a2;
+    --line: #4a4d45;
+    --ph: #2b2d27;
+    --ph-stripe: #34362f;
+    --btn: #f1eee6;
+    --btn-text: #1d1f1b;
     --btn-hover: #ffffff;
-    --footer: #060c1a;
-    --footer-text: #e8f1ff;
-    --dot: #4ade80;
-    --grid: rgba(125, 211, 252, 0.06);
-    --focus: #7dd3fc;
+    --footer: #14160f;
+    --footer-text: #f1eee6;
+    --dot: #6fcf97;
+    --grid: rgba(235, 211, 162, 0.08);
     color-scheme: dark;
   }
 }
 
 /* Modo noche elegido manualmente */
 :root[data-theme="dark"] {
-  --bg: #0a1224;
-  --surface: #101b31;
-  --card: #14213b;
-  --text: #e8f1ff;
-  --muted: #aabfd9;
-  --accent: #7dd3fc;
-  --line: #2b4468;
-  --ph: #17294a;
-  --ph-stripe: #1f355c;
-  --btn: #e8f1ff;
-  --btn-text: #0a1224;
+  --bg: #1d1f1b;
+  --wash: linear-gradient(135deg, rgba(179, 182, 173, 0.1) 0%, rgba(235, 211, 162, 0.12) 100%);
+  --surface: rgba(255, 255, 255, 0.03);
+  --card: rgba(255, 255, 255, 0.05);
+  --text: #f1eee6;
+  --muted: #bfc0b9;
+  --accent: #ebd3a2;
+  --focus: #ebd3a2;
+  --line: #4a4d45;
+  --ph: #2b2d27;
+  --ph-stripe: #34362f;
+  --btn: #f1eee6;
+  --btn-text: #1d1f1b;
   --btn-hover: #ffffff;
-  --footer: #060c1a;
-  --footer-text: #e8f1ff;
-  --dot: #4ade80;
-  --grid: rgba(125, 211, 252, 0.06);
-  --focus: #7dd3fc;
+  --footer: #14160f;
+  --footer-text: #f1eee6;
+  --dot: #6fcf97;
+  --grid: rgba(235, 211, 162, 0.08);
   color-scheme: dark;
 }
 
@@ -92,10 +98,11 @@ body {
   line-height: 1.6;
   color: var(--text);
   background-color: var(--bg);
+  /* Capas: degradado suave + cuadrícula girada 45° (rombos) */
   background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 40px 40px;
+    var(--wash),
+    repeating-linear-gradient(45deg, var(--grid) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(-45deg, var(--grid) 0 1px, transparent 1px 40px);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -176,35 +183,35 @@ ol, ul {
   gap: 0.35rem;
   min-height: 44px;
   padding: 0.6rem 1.1rem;
-  border: 2px solid var(--btn);
+  border: 2px solid transparent;
   border-radius: 6px;
   font: inherit;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: filter 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn--primary {
-  background: var(--btn);
+  background: var(--gradient);
   color: var(--btn-text);
+  border-color: transparent;
 }
 
 .btn--primary:hover {
-  background: var(--btn-hover);
-  border-color: var(--btn-hover);
+  filter: brightness(1.06);
 }
 
 .btn--small {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
-  background: var(--btn);
+  background: var(--gradient);
   color: var(--btn-text);
 }
 
 .btn--small:hover {
-  background: var(--btn-hover);
+  filter: brightness(1.06);
 }
 
 .btn--light {
