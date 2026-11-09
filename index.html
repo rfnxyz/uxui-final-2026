@@ -17,12 +17,12 @@
       <a class="brand" href="#inicio">
         <span class="brand__mark" aria-hidden="true">AR</span>
         <span class="brand__text">
-          <span class="brand__name">Nombre Genérico</span>
+          <span class="brand__name">Alex Rivera</span>
           <span class="brand__role">Portfolio · UX &amp; Frontend</span>
         </span>
       </a>
 
-      <nav class="header__nav" aria-label="Navegación principal">
+      <nav class="header__nav" id="menu-principal" aria-label="Navegación principal">
         <ol class="nav-list">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -32,7 +32,7 @@
           <li><a href="#contacto">Contacto</a></li>
         </ol>
       </nav>
-      
+
       <div class="header__actions">
         <p class="availability"><span class="dot" aria-hidden="true"></span> Disponible Q2</p>
         <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
@@ -43,6 +43,10 @@
           <span class="btn__label">Hablemos</span>
           <span aria-hidden="true">→</span>
         </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Menú de navegación</span>
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -472,6 +476,37 @@
     })();
   </script>
 
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('menu-principal');
+      if (!btn || !nav) { return; }
+
+      function setOpen(open) {
+        btn.setAttribute('aria-expanded', String(open));
+        nav.classList.toggle('is-open', open);
+      }
+
+      btn.addEventListener('click', function () {
+        setOpen(btn.getAttribute('aria-expanded') !== 'true');
+      });
+
+      nav.addEventListener('click', function (e) {
+        if (e.target.closest('a')) { setOpen(false); }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+          setOpen(false);
+          btn.focus();
+        }
+      });
+
+      window.matchMedia('(min-width: 769px)').addEventListener('change', function (e) {
+        if (e.matches) { setOpen(false); }
+      });
+    })();
+  </script>
 
 </body>
 </html>
