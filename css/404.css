@@ -1,0 +1,49 @@
+/* =========================================================
+   Página 404 · estilos dedicados
+   Hereda variables, fondo y tema de styles.css
+   ========================================================= */
+
+.error-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.error__code {
+  margin: 0;
+  font-size: clamp(6rem, 22vw, 14rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--accent);
+}
+
+.error__title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: -0.01em;
+}
+
+.error__text {
+  max-width: 32rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .error * {
+    transition: none !important;
+  }
+}

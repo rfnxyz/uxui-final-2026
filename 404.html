@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | Página no encontrada | Alex Rivera</title>
+  <meta name="description" content="La página que buscas no existe o fue movida.">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/404.css">
+</head>
+<body class="error-page">
+
+  <main class="error" aria-labelledby="titulo-error">
+    <p class="error__code" aria-hidden="true">404</p>
+    <h1 class="error__title" id="titulo-error">Página no encontrada</h1>
+    <p class="error__text">La página que buscas no existe o fue movida.</p>
+    <a class="btn btn--primary" href="index.html#inicio">Volver al inicio</a>
+  </main>
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved) { document.documentElement.setAttribute('data-theme', saved); }
+      } catch (e) {}
+    })();
+  </script>
+
+</body>
+</html>
