@@ -1269,3 +1269,26 @@ ol, ul {
     animation: none !important;
   }
 }
+
+/* Pie: links de navegación y redes sobre fondo oscuro */
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--footer-text);
+}
+
+.site-footer .social-links a {
+  color: var(--footer-text);
+  background: transparent;
+  border-color: var(--footer-text);
+}
