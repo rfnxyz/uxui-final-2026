@@ -1292,3 +1292,39 @@ ol, ul {
   background: transparent;
   border-color: var(--footer-text);
 }
+
+/* Anclas: el header fijo no tapa los títulos de sección */
+section[id] {
+  scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+/* Transiciones de los elementos interactivos */
+.btn,
+.theme-toggle,
+.nav-toggle,
+.nav-list a,
+.social-links a,
+.footer__links a,
+.contact-card,
+.link-cv {
+  transition: transform 0.15s ease, filter 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Estado activo: retroalimentación al pulsar */
+.btn:active,
+.theme-toggle:active,
+.nav-toggle:active,
+.nav-list a:active,
+.social-links a:active,
+.footer__links a:active,
+.contact-card:active,
+.link-cv:active {
+  transform: scale(0.98);
+}
+
+/* Hover en enlaces de texto que no lo tenían */
+.link-cv:hover,
+.footer__links a:hover {
+  text-decoration: underline;
+}
