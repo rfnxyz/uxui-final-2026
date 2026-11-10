@@ -20,10 +20,10 @@ Medición realizada sobre la URL publicada con Chrome DevTools.
 
 | Categoría | Escritorio | Mobile |
 |---|---|---|
-| Performance | {CONFIRMAR} | {CONFIRMAR} |
-| Accessibility | {CONFIRMAR} | {CONFIRMAR} |
-| Best Practices | {CONFIRMAR} | {CONFIRMAR} |
-| SEO | {CONFIRMAR} | {CONFIRMAR} |
+| Performance | 🟢 100 | 🟢 100} |
+| Accessibility | 🟢 100 | 🟢  100 |
+| Best Practices | 🟢  96 | 🟢  98 |
+| SEO | 🟢 100 | 🟢 100
 
 (lighthouse-escritorio.png)
 
