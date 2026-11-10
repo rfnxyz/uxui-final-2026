@@ -102,7 +102,7 @@ window.CONTENIDO = {
       año: 2026,
       resumen: 'Flujo de descubrimiento, carrito y pago multi-paso para una tienda de arte digital, pensado para compradores que compran un NFT por primera vez.',
       imagen: {
-        src: 'src/img/caso-openart.jpg',
+        src: 'src/img/openart.avif',
         alt: 'Pantalla de checkout de OpenArt con el resumen de compra de un NFT',
         width: 800,
         height: 500
@@ -122,7 +122,7 @@ window.CONTENIDO = {
         resultado: 'Prototipo navegable listo para validación. Las fichas de cada artista muestran su historial de transacciones y las reseñas de la comunidad, lo que reduce la duda antes de pagar y da motivos para volver al catálogo.',
         aprendizaje: 'En arte digital la duda de compra es de confianza, no de precio. Mostrar quién vende y cuántas transacciones tiene pesó más que destacar la oferta.'
       },
-      enlace: { url: 'https://www.figma.com/', texto: 'Ver prototipo en Figma' }
+      enlace: { url: 'https://rfnxyz.github.io/uxui_2026/tp2/home.html', texto: 'Ver prototipo' }
     },
     {
       id: 'finflow',
@@ -132,7 +132,7 @@ window.CONTENIDO = {
       año: 2024,
       resumen: 'Rediseño de la tesorería y los pagos internacionales para pymes europeas, con un flujo que muestra el costo final antes de confirmar.',
       imagen: {
-        src: 'img/caso-finflow.jpg',
+        src: 'src/img/finflow.avif',
         alt: 'Vista previa de la plataforma bancaria B2B Finflow',
         width: 800,
         height: 500
@@ -162,7 +162,7 @@ window.CONTENIDO = {
       año: 2024,
       resumen: 'Aplicación para seguimiento biométrico continuo con alertas que el paciente entiende sin necesidad de un especialista al lado.',
       imagen: {
-        src: 'img/caso-pulse-ai.jpg',
+        src: 'src/img/pulseai.avif',
         alt: 'Pantallas de la app móvil de salud Pulse AI',
         width: 800,
         height: 500
@@ -192,7 +192,7 @@ window.CONTENIDO = {
       año: 2023,
       resumen: 'Panel operativo para despacho y supervisión de más de 2.000 vehículos en tiempo real, con mapa e incidentes en la misma vista.',
       imagen: {
-        src: 'img/caso-logicore.jpg',
+        src: 'src/img/LOGIcore.avif',
         alt: 'Panel de control logístico LogiCore con mapa de vehículos',
         width: 800,
         height: 500

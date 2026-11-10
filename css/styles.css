@@ -1014,49 +1014,84 @@ ol, ul {
 
 /* ---------- 10. Trayectoria ---------- */
 .timeline {
+  position: relative;
   display: grid;
-  gap: 1rem;
+  gap: 1.75rem;
   margin: 0;
+  padding: 0 0 0 2rem;
   list-style: none;
 }
 
+/* Línea vertical */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.45rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--line);
+  border-radius: 2px;
+}
+
 .job {
-  padding: 1.5rem;
+  position: relative;
+  padding: 1.1rem 1.25rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
-.job__head {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
+/* Punto sobre la línea, alineado con la fecha */
+.job::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 1.25rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: var(--gradient);
+  border: 2px solid var(--bg);
+  box-sizing: border-box;
 }
 
-.job h3 {
-  margin: 0;
-  font-size: 1.1rem;
+/* La fecha va arriba y el rol debajo */
+.job__head {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.25rem;
 }
 
 .job__period {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--muted);
 }
 
+.job h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
 .job__org {
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.25rem 0 0.6rem;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--muted);
 }
 
 .job ul {
   margin: 0;
-  padding-left: 1.25rem;
+  padding-left: 1.1rem;
   color: var(--muted);
+}
+
+.job ul li + li {
+  margin-top: 0.35rem;
 }
 
 /* ---------- 11. Testimonios ---------- */
