@@ -74,22 +74,22 @@ window.CONTENIDO = {
 
   testimonios: [
     {
-      texto: 'Nombre tiene la rara habilidad de entender el negocio tan bien como el diseño. Su capacidad para transformar requisitos confusos en wireframes claros aceleró nuestro lanzamiento 3 meses.',
+      texto: 'Facundo tiene la rara habilidad de entender el negocio tan bien como el diseño. Su capacidad para transformar requisitos confusos en wireframes claros aceleró nuestro lanzamiento 3 meses.',
       iniciales: 'EG',
-      nombre: 'Elena Gómez',
-      cargo: 'VP of Product · Finflow'
+      nombre: 'Gómez Torba, Élver',
+      cargo: 'VP · Finflow'
     },
     {
-      texto: 'Trabajar con Nombre como diseñador que domina React y Design Systems fue un soplo de aire fresco. Sus especificaciones eran prácticamente código de producción listo para usar.',
-      iniciales: 'MV',
-      nombre: 'Marcus Vance',
+      texto: 'Trabajar con Facundo como diseñador que domina React y Design Systems fue un soplo de aire fresco. Sus especificaciones eran prácticamente código de producción listo para usar.',
+      iniciales: 'DJ',
+      nombre: 'Doe, John',
       cargo: 'Head of Engineering · Nexus'
     },
     {
-      texto: 'El diseño de nuestra app móvil superó cualquier expectativa. Nombre supo transmitir empatía y calidez en una herramienta médica rigurosa. Los inversores quedaron fascinados.',
-      iniciales: 'SV',
-      nombre: 'Sofía Valenzuela',
-      cargo: 'Co-Founder & CEO · Pulse AI'
+      texto: 'El diseño de nuestra app móvil superó cualquier expectativa. Rotela supo transmitir empatía y calidez en una herramienta médica rigurosa. Los inversores quedaron fascinados.',
+      iniciales: 'LB',
+      nombre: 'Lu Bu',
+      cargo: 'CEO · Pulse AI'
     }
   ],
 
@@ -155,22 +155,22 @@ window.CONTENIDO = {
       enlace: { url: 'https://www.figma.com/', texto: 'Ver en Figma' }
     },
     {
-      id: 'orbit',
-      nombreCorto: 'Orbit',
-      titulo: 'Orbit: Sistema de diseño multiplataforma',
-      categoria: 'Design System · Design System Architect',
-      año: 2023,
-      resumen: 'Infraestructura de componentes, variables de Figma y tokens semánticos sincronizados para 6 productos digitales y 45 ingenieros.',
+      id: 'openart',
+      nombreCorto: 'OpenArt',
+      titulo: 'OpenArt: e-commerce de NFTs',
+      categoria: 'Checkout - Checkout designer',
+      año: 2026,
+      resumen: 'Diseño de flujo de compras, experiencia de usuario',
       imagen: {
         src: 'img/caso-orbit.jpg',
-        alt: 'Documentación del sistema de diseño multiplataforma Orbit',
+        alt: 'Documentación de la plataforma de e-commerce de NFTs',
         width: 800,
         height: 500
       },
       metricas: [
-        { etiqueta: 'Consistencia', valor: '98%' }
+        { etiqueta: 'Satisfacción', valor: '9.8/10' }
       ],
-      herramientas: ['Figma Variables', 'Design tokens', 'Storybook', 'Tailwind CSS'],
+      herramientas: ['Figma Variables', 'Design tokens', 'Storybook', 'Checkout flow'],
       caso: {
         problema: 'Seis productos tenían componentes duplicados y diseños que cambiaban de un equipo a otro.',
         proceso: [
@@ -198,8 +198,6 @@ window.CONTENIDO = {
         height: 500
       },
       metricas: [
-        { etiqueta: 'Incidentes', valor: '-28%' },
-        { etiqueta: 'Reacción', valor: '<90s' },
         { etiqueta: 'Satisfacción', valor: '9.4/10' }
       ],
       herramientas: ['Figma', 'React', 'Mapas geoespaciales', 'Tailwind CSS'],
