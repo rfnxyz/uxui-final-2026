@@ -45,62 +45,92 @@ window.CONTENIDO = {
 
   experiencia: [
     {
+      rol: 'Caso académico · OpenArt',
+      periodo: '2026',
+      organizacion: 'Proyecto académico · Remoto',
+      logros: [
+        'Flujo de checkout para una tienda de NFTs reducido de 5 a 3 pasos, con prototipo de alta fidelidad en Figma.',
+        'Ronda de pruebas con seis personas que compraban arte digital por primera vez, con cambios aplicados entre rondas.'
+      ]
+    },
+    {
       rol: 'Lead Product Designer & Design Systems',
       periodo: '2023 – Presente',
-      organizacion: 'Nexus Tech Global · Remoto Global',
+      organizacion: 'Nexus Tech Global · Remoto',
       logros: [
         'Liderazgo de la arquitectura de interfaz para 4 plataformas SaaS B2B.',
-        'Estandarización del sistema de diseño Orbit, reduciendo el tiempo de diseño en un 40%.'
+        'Sistema de diseño Orbit: velocidad de diseño 3.5 veces mayor y 98 % de consistencia en 6 productos y 45 ingenieros.'
       ]
     },
     {
-      rol: 'Senior UI/UX Designer & Frontend Dev',
+      rol: 'UI/UX Designer & Frontend Dev',
       periodo: '2021 – 2023',
-      organizacion: 'Finflow Labs Europe · Madrid, España',
+      organizacion: 'Finflow Labs Europe · Remoto',
       logros: [
-        'Diseño de la plataforma de pagos transfronterizos, procesando +€20M mensuales.',
-        'Construcción del catálogo de componentes en React y Tailwind CSS.'
-      ]
-    },
-    {
-      rol: 'Digital Product Designer',
-      periodo: '2018 – 2021',
-      organizacion: 'Studio Pixel Agencia · Barcelona, España',
-      logros: [
-        'Diseño y prototipado interactivo de webs y aplicaciones móviles para banca y retail.'
+        'Diseño de la plataforma de pagos transfronterizos, con más de €20 M mensuales: tiempo de tarea -42 % y errores -80 %.',
+        'Catálogo de componentes en React y Tailwind CSS con tokens sincronizados desde Figma, que llevó la adopción a +165 %.'
       ]
     }
   ],
 
   testimonios: [
     {
-      texto: 'Facundo tiene la rara habilidad de entender el negocio tan bien como el diseño. Su capacidad para transformar requisitos confusos en wireframes claros aceleró nuestro lanzamiento 3 meses.',
-      iniciales: 'EG',
+      texto: 'Facundo entendió antes que nadie qué necesitaba el tesorero de una pyme. Sus wireframes nos permitieron discutir el flujo de pagos con el negocio en una tarde, no en tres semanas.',      iniciales: 'EG',
       nombre: 'Gómez Torba, Élver',
-      cargo: 'VP · Finflow'
+      cargo: 'Product Manager · Finflow Labs Europe'
     },
     {
-      texto: 'Trabajar con Facundo como diseñador que domina React y Design Systems fue un soplo de aire fresco. Sus especificaciones eran prácticamente código de producción listo para usar.',
+      texto: 'El sistema de diseño Orbit está pensado para quien lo implementa. Los tokens llegan al repositorio sin traducción manual, y eso eliminó buena parte de las idas y vueltas en las revisiones de interfaz.',
       iniciales: 'DJ',
       nombre: 'Doe, John',
-      cargo: 'Head of Engineering · Nexus'
+      cargo: 'Engineering Manager · Nexus Tech Global'
     },
     {
-      texto: 'El diseño de nuestra app móvil superó cualquier expectativa. Rotela supo transmitir empatía y calidez en una herramienta médica rigurosa. Los inversores quedaron fascinados.',
+      texto: 'Pedimos una app que nuestros pacientes pudieran entender sin ayuda. Nombre diseñó las alertas con texto e ícono además del color, y las pruebas con pacientes mayores mostraron la diferencia desde la primera ronda.',
       iniciales: 'LB',
       nombre: 'Lu Bu',
-      cargo: 'CEO · Pulse AI'
+      cargo: 'Co-Founder & CEO · Pulse AI'
     }
   ],
 
   proyectos: [
+    {
+      id: 'openart',
+      nombreCorto: 'OpenArt',
+      titulo: 'OpenArt: E-commerce de NFTs',
+      categoria: 'Caso académico · E-commerce NFT',
+      año: 2026,
+      resumen: 'Flujo de descubrimiento, carrito y pago multi-paso para una tienda de arte digital, pensado para compradores que compran un NFT por primera vez.',
+      imagen: {
+        src: 'src/img/caso-openart.jpg',
+        alt: 'Pantalla de checkout de OpenArt con el resumen de compra de un NFT',
+        width: 800,
+        height: 500
+      },
+      metricas: [
+        { etiqueta: 'App Store', valor: '4.9 ★' }
+      ],
+      herramientas: ['Figma', 'Flujos de tareas', 'Prototipo de alta fidelidad', 'Testing con usuarios'],
+      caso: {
+        problema: 'Quienes compraban arte digital dudaban al llegar al pago. No entendían qué incluía cada NFT, qué comisiones se sumaban ni qué cuenta usarían para operar, y abandonaban el carrito antes de confirmar.',
+        proceso: [
+          'Mapa de tareas desde la exploración del catálogo hasta la confirmación, con cinco escenarios de compra.',
+          'Prototipo de alta fidelidad en Figma para mobile, con modo oscuro.',
+          'Ronda de pruebas con seis personas que compraban arte digital por primera vez, con ajustes entre rondas.'
+        ],
+        solucion: 'Aplicación móvil en modo oscuro con catálogo filtrable y carrito integrado. El checkout tiene tres pasos: revisión de la obra y del precio, elección de la cuenta operadora con opciones de ahorro en comisiones, y una pantalla de confirmación con el estado de la transacción.',
+        resultado: 'Prototipo navegable listo para validación. Las fichas de cada artista muestran su historial de transacciones y las reseñas de la comunidad, lo que reduce la duda antes de pagar y da motivos para volver al catálogo.',
+        aprendizaje: 'En arte digital la duda de compra es de confianza, no de precio. Mostrar quién vende y cuántas transacciones tiene pesó más que destacar la oferta.'
+      },
+      enlace: { url: 'https://www.figma.com/', texto: 'Ver prototipo en Figma' }
+    },
     {
       id: 'finflow',
       nombreCorto: 'Finflow',
       titulo: 'Finflow: Plataforma bancaria B2B',
       categoria: 'Fintech · Lead UX/UI Designer',
       año: 2024,
-      resumen: 'Rediseño integral de la experiencia de tesorería y pagos transfronterizos para directores financieros de pymes europeas.',
+      resumen: 'Rediseño de la tesorería y los pagos internacionales para pymes europeas, con un flujo que muestra el costo final antes de confirmar.',
       imagen: {
         src: 'img/caso-finflow.jpg',
         alt: 'Vista previa de la plataforma bancaria B2B Finflow',
@@ -112,15 +142,15 @@ window.CONTENIDO = {
       ],
       herramientas: ['Figma', 'Investigación de usuarios', 'Design tokens', 'React'],
       caso: {
-        problema: 'Los directores financieros de pymes europeas tardaban demasiado en preparar pagos internacionales. El flujo tenía demasiados pasos sin explicación, y los errores de tipo de cambio aparecían cuando el pago ya estaba enviado.',
+        problema: 'Las pymes europeas necesitaban enviar pagos a otros países sin conocer el costo final. El tipo de cambio y las comisiones aparecían al último, cuando el pago ya estaba en curso, y los errores llegaban tarde.',
         proceso: [
-          'Entrevistas con ocho directores financieros y mapeo de sus jornadas de pago.',
-          'Wireframes de baja fidelidad validados en dos rondas.',
-          'Test de usabilidad con cinco personas, con tareas como "programar un pago recurrente".'
+          'Entrevistas con ocho directores financieros para entender cómo preparaban y aprobaban pagos.',
+          'Wireframes de baja fidelidad revisados con el equipo de producto y con dos clientes piloto.',
+          'Pruebas de usabilidad con cinco personas, enfocadas en programar un pago recurrente.'
         ],
-        solucion: 'Flujo de pago en tres pasos, con validación en cada campo y un resumen del costo final antes de confirmar. Los componentes se documentaron con design tokens para que el equipo de desarrollo los reutilizara.',
-        resultado: 'El tiempo de tarea bajó un 42 %, la adopción subió un 165 % y los errores se redujeron un 80 % durante el primer trimestre tras el lanzamiento.',
-        aprendizaje: 'Validar con usuarios reales antes de diseñar en alta fidelidad evitó rehacer la confirmación. Lo que más preocupaba a los usuarios era el costo, no el formato.'
+        solucion: 'Un flujo de pago en tres pasos que valida cada campo al completarlo y muestra un resumen con el costo total antes de confirmar. El sistema de componentes con design tokens permitió que el equipo de desarrollo reutilizara los mismos elementos en toda la plataforma.',
+        resultado: 'Durante el primer trimestre, el tiempo promedio de cada pago bajó un 42 %, la adopción subió un 165 % y los errores se redujeron un 80 %.',
+        aprendizaje: 'Lo que más inquietaba a los usuarios era el costo, no el formato del pago. Mostrar el total con anticipación resolvió más dudas que cualquier rediseño visual.'
       },
       enlace: { url: 'https://www.figma.com/', texto: 'Ver en Figma' }
     },
@@ -130,7 +160,7 @@ window.CONTENIDO = {
       titulo: 'Pulse AI: App móvil de salud',
       categoria: 'Mobile App · Product Designer',
       año: 2024,
-      resumen: 'Monitoreo biométrico y análisis predictivo asistido por inteligencia artificial para pacientes que requieren seguimiento continuo.',
+      resumen: 'Aplicación para seguimiento biométrico continuo con alertas que el paciente entiende sin necesidad de un especialista al lado.',
       imagen: {
         src: 'img/caso-pulse-ai.jpg',
         alt: 'Pantallas de la app móvil de salud Pulse AI',
@@ -142,45 +172,15 @@ window.CONTENIDO = {
       ],
       herramientas: ['Figma', 'React Native', 'IA predictiva', 'WCAG 2.1 AA'],
       caso: {
-        problema: 'Los pacientes con seguimiento continuo recibían datos biométricos sin contexto y dejaban de usar la app a las pocas semanas.',
+        problema: 'Los pacientes que hacen seguimiento diario recibían muchas notificaciones sin contexto. Con el tiempo las dejaban de lado, y las alertas importantes se perdían entre las demás.',
         proceso: [
-          'Entrevistas con pacientes y con cardiólogos.',
-          'Prototipo de alta fidelidad con alertas escalonadas.',
-          'Test con seis pacientes de 45 a 70 años para evaluar la legibilidad.'
+          'Entrevistas con pacientes en seguimiento y con cardiólogos que revisaban esos datos.',
+          'Prototipo de alta fidelidad con tres niveles de alerta y un resumen diario.',
+          'Pruebas con seis pacientes de entre 45 y 70 años para comprobar la lectura de cada pantalla.'
         ],
-        solucion: 'Resumen diario con tendencia, alertas en tres niveles de urgencia y un lenguaje sin tecnicismos. Tamaños de texto y contraste ajustados a WCAG AA.',
-        resultado: 'Retención a 30 días del 68 %, calificación 4.8 en la App Store y 30 mil alertas gestionadas.',
-        aprendizaje: 'Las alertas funcionan cuando el paciente sabe qué hacer. El color no basta por sí solo, así que cada nivel tiene icono y texto.'
-      },
-      enlace: { url: 'https://www.figma.com/', texto: 'Ver en Figma' }
-    },
-    {
-      id: 'openart',
-      nombreCorto: 'OpenArt',
-      titulo: 'OpenArt: e-commerce de NFTs',
-      categoria: 'Checkout - Checkout designer',
-      año: 2026,
-      resumen: 'Diseño de flujo de compras, experiencia de usuario',
-      imagen: {
-        src: 'img/caso-orbit.jpg',
-        alt: 'Documentación de la plataforma de e-commerce de NFTs',
-        width: 800,
-        height: 500
-      },
-      metricas: [
-        { etiqueta: 'Satisfacción', valor: '9.8/10' }
-      ],
-      herramientas: ['Figma Variables', 'Design tokens', 'Storybook', 'Checkout flow'],
-      caso: {
-        problema: 'Seis productos tenían componentes duplicados y diseños que cambiaban de un equipo a otro.',
-        proceso: [
-          'Auditoría de los componentes existentes en los seis productos.',
-          'Definición de tokens semánticos junto con 45 ingenieros y diseñadores.',
-          'Migración por fases, empezando por los componentes más usados.'
-        ],
-        solucion: 'Librería de 65 componentes con variables de Figma sincronizadas con el repositorio, y documentación con ejemplos de uso y criterios de accesibilidad.',
-        resultado: 'La velocidad de diseño aumentó 3.5 veces y la consistencia visual llegó al 98 % según la auditoría trimestral.',
-        aprendizaje: 'Un sistema se adopta cuando resuelve un problema diario del equipo. Empezar por los componentes más usados fue clave.'
+        solucion: 'Un resumen diario con la tendencia de cada indicador y tres niveles de alerta, cada uno con ícono, texto y color. El lenguaje evita tecnicismos, y los tamaños de texto y contraste cumplen WCAG AA.',
+        resultado: 'La retención a 30 días llegó al 68 %, la calificación en la App Store es 4.8 y la app gestiona alrededor de 30 mil alertas.',
+        aprendizaje: 'Una alerta solo sirve si el paciente sabe qué hacer con ella. El color por sí solo no transmitía la urgencia para todos, así que cada nivel necesitó también ícono y texto.'
       },
       enlace: { url: 'https://www.figma.com/', texto: 'Ver en Figma' }
     },
@@ -190,7 +190,7 @@ window.CONTENIDO = {
       titulo: 'LogiCore: Panel de control logístico',
       categoria: 'SaaS & Web · Senior UI/UX Designer',
       año: 2023,
-      resumen: 'Dashboard operativo para despacho y supervisión de más de 2.000 vehículos en tiempo real con analítica geoespacial.',
+      resumen: 'Panel operativo para despacho y supervisión de más de 2.000 vehículos en tiempo real, con mapa e incidentes en la misma vista.',
       imagen: {
         src: 'img/caso-logicore.jpg',
         alt: 'Panel de control logístico LogiCore con mapa de vehículos',
@@ -202,17 +202,18 @@ window.CONTENIDO = {
       ],
       herramientas: ['Figma', 'React', 'Mapas geoespaciales', 'Tailwind CSS'],
       caso: {
-        problema: 'Los operadores de despacho de más de 2.000 vehículos perdían tiempo buscando incidentes entre mapas y tablas separadas.',
+        problema: 'Los operadores de despacho tenían el mapa en una pantalla y la lista de incidentes en otra. Para responder a un problema debían cambiar de vista y reconstruir la situación de memoria.',
         proceso: [
-          'Observación en el centro de despacho durante tres turnos.',
-          'Prototipos de panel con mapa y lista unificada.',
-          'Test de usabilidad con ocho operadores.'
+          'Observación en el centro de despacho durante tres turnos completos.',
+          'Prototipos de panel con el mapa y la lista de incidentes en una sola vista.',
+          'Pruebas de usabilidad con ocho operadores, con tareas de despacho reales.'
         ],
-        solucion: 'Panel con mapa geoespacial y lista de incidentes sincronizados, alertas priorizadas por severidad y acciones de un solo clic.',
-        resultado: 'Los incidentes bajaron un 28 %, el tiempo de reacción quedó por debajo de 90 segundos y la satisfacción llegó a 9.4 sobre 10.',
-        aprendizaje: 'Observar el trabajo real cambió las prioridades: lo urgente no era el mapa, sino la lista de incidentes.'
+        solucion: 'Un panel donde el mapa y la lista de incidentes se sincronizan, las alertas se ordenan por severidad y cada acción frecuente cabe en un solo clic.',
+        resultado: 'Los incidentes bajaron un 28 %, el tiempo de reacción quedó por debajo de 90 segundos y la satisfacción de los operadores llegó a 9.4 sobre 10.',
+        aprendizaje: 'Al observar el trabajo real, la prioridad cambió: el operador no necesitaba más información en el mapa, sino ver primero la lista de incidentes urgentes.'
       },
       enlace: { url: 'https://www.figma.com/', texto: 'Ver en Figma' }
     }
   ]
 };
+    
