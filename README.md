@@ -4,7 +4,7 @@ Portfolio web personal desarrollado como trabajo final de la materia **Diseño U
 
 El sitio presenta mi perfil profesional de diseño de experiencia de usuario, sistemas de diseño y desarrollo frontend: propuesta de valor, casos de estudio, trayectoria, testimonios y contacto. Está construido con HTML, CSS y JavaScript vanilla, sin frameworks ni constructores visuales.
 
-(inicio-claro.escritorio.jpg)
+![](doc/cap/inicio-claro.escritorio.jpg)
 
 ## Demostración
 
@@ -12,7 +12,7 @@ El sitio presenta mi perfil profesional de diseño de experiencia de usuario, si
 - **Repositorio:** https://github.com/rfnxyz/uxui-final-2026
 - **Boceto y prototipo en Figma:** https://www.figma.com/make/dxqabH4PQ0b7XwLidB9nkS/Wireframe-de-portfolio-personal
 
-(inicio-noche-escritorio.png)
+![](doc/cap/inicio-noche-escritorio.png)
 
 ## Auditoría de rendimiento y accesibilidad (Lighthouse)
 
@@ -25,15 +25,17 @@ Medición realizada sobre la URL publicada con Chrome DevTools.
 | Best Practices | 🟢  96 | 🟢  98 |
 | SEO | 🟢 100 | 🟢 100
 
-(lighthouse-escritorio.png)
+![](doc/cap/lighthouse-escritorio.png)
 
-(lighthouse-mobile.png)
+![](doc/cap/lighthouse-mobile.png)
 
-(inicio-claro-mobile.png)
+![](doc/cap/inicio-claro-mobile.png)
 
-(inicio-noche-mobile.png)
+![](doc/cap/inicio-noche-mobile.png)
 
-(figma.png)
+![](doc/cap/figma.png)
+
+![](doc/cap/figma-noche.png)
 
 ## Tecnologías utilizadas
 
@@ -62,20 +64,27 @@ uxui-final-2026/
 │   ├── contenido.js        # Textos y datos de proyectos, servicios, experiencia y testimonios
 │   └── render.js           # Dibuja el contenido en la página y gestiona el diálogo de casos
 ├── src/
+│   └── cv.pdf                        # Currículum descargable
 │   └── img/
-│       ├── hero-facundo-rotela.jpg   # Retrato del hero · PENDIENTE
-│       ├── sobre-mi-taller.jpg       # Fotografía de la sección Sobre mí · PENDIENTE
-│       ├── caso-finflow.jpg          # Miniatura del caso Finflow · PENDIENTE
-│       ├── caso-pulse-ai.jpg         # Miniatura del caso Pulse AI · PENDIENTE
-│       ├── caso-orbit.jpg            # Miniatura del caso Orbit · PENDIENTE
-│       ├── caso-logicore.jpg         # Miniatura del caso LogiCore · PENDIENTE
-│       ├── caso-openart.jpg          # Miniatura del caso OpenArt · PENDIENTE
-│       └── og-image.jpg              # Imagen para vista previa en redes (1200 × 630) · PENDIENTE
+│       ├── hero-facundo-rotela.jpg   # Retrato del hero
+│       ├── sobre-mi-taller.jpg       # Fotografía de la sección Sobre mí
+│       ├── caso-finflow.jpg          # Miniatura del caso Finflow
+│       ├── caso-pulse-ai.jpg         # Miniatura del caso Pulse AI
+│       ├── caso-orbit.jpg            # Miniatura del caso Orbit
+│       ├── caso-logicore.jpg         # Miniatura del caso LogiCore
+│       ├── caso-openart.jpg          # Miniatura del caso OpenArt
+│       └── og-image.jpg              # Imagen para vista previa en redes (1200 × 630)
 ├── docs/
-│   └── capturas/           # Capturas usadas en este README
-└── cv.pdf                  # Currículum descargable · PENDIENTE
+│   └── cap/                            # Capturas usadas en este README
+│       ├── inicio-claro-mobile.jpg     # Página de inicio de la versión móvil con tema claro
+│       ├── inicio-noche-mobile.jpg     # Ídem con modo noche
+│       ├── inicio-claro-escritorio.jpg # Página de inicio de la versión de escritorio con tema claro
+│       ├── inicio-noche-escritorio.jpg # Ídem con modo noche
+│       ├── lighthouse-escritorio.jpg   # Demostración de auditoría de la versión de escritorio
+│       ├── lighthouse-mobile.jpg       # Ídem de la versión móvil
+│       ├── figma.png                   # Wireframe hecho en Figma
+│       └── figma-noche.png             # Ídem en modo noche
 ```
-
 ## Uso de inteligencia artificial
 
 Se utilizó un asistente de IA en las siguientes tareas:
